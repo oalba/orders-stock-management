@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cuerpo {
+  padding-left:20px;
+  padding-right:20px;
+  margin-top:60px;
+}
+
+li.about{
+  float:right;
+  list-style-type:none;
+  margin: 0 0 10px 10px;
+}
+
+li.log{
+  float:right;
+  list-style-type:none;
+  margin: 0 0 10px 10px;
+}
+
+.aboutcuerpo{
+  padding:30px;
+  margin:30px;
+}
+
+.button1 {width:100%;height:100%;}
+.button2 {width:100%;height:50%;}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+}
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4em;
+  line-height: 50px;
+  text-align: left;
+  width: 130px;
+  border-bottom: none;
+  height: 50px;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  border-bottom: none;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+.nav > ul > li {
+  text-align: center;
+}
+
+.nav > ul > li > a {
+  padding-left: 0;
+}
+
+/* Sub Menus */
+.nav li ul {
+  margin-top:50px;
+  position: absolute;
+  display: none;
+  width: inherit;
+}
+
+.nav li li {
+  font-size: .8em;
+  background-color: #444;
+  list-style: inherit;
+  padding: 0;
+  margin: 0;
+}
+.nav li:hover ul {
+  display: block;
+}
+
+.nav li ul li {
+  display: block;
+}
+
+.go-top {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4em;
+  position: fixed;
+  bottom: 0em;
+  right: 0em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(4, 4, 4, 0.6);
+  //font-size: 12px;
+  padding: 10px;
+  display: none;
+  margin: 0;
+}
+
+.go-top:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*******************************************
+   Style menu for larger screens
+
+   Using 525px, but ems
+   or other values could be used depending on other factors
+********************************************/
+
+@media screen and (max-width: 525px) {
+  .cuerpo {
+    margin-left:130px;
+    margin-top:20px;
+  }
+
+  .aboutcuerpo{
+    margin-left:130px;
+    margin-top:-20px;
+  }
+
+  .nav ul {
+    margin-right: 0;
+    width: 130px;
+    height: 100%;
+  }
+
+  .nav li {
+    border-bottom: none;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: list-item;
+    margin-right: -4px;
+    margin-bottom:100px;
+  }
+
+  .nav > ul > li {
+    text-align: left;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 10;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    margin-top:0px;
+    position: relative;
+    display: list-item;
+    width: inherit;
+    height: 50px;
+  }
+
+  .nav > ul > li > ul > li > a {
+    padding-left: 25;
+  }
+
+  .nav li ul li {
+    position: relative;
+    display: block;
+    width: inherit;
+    height: 50px;
+  }
+
+  li.about{
+    margin: 0 0 0 0;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:0px;
+  }
+}
+
+/*---TELEPHONE FORMAT----*/
+/*----Ratio 0.75----*/
+@media only screen and (-webkit-device-pixel-ratio:.75) {
+  .cuerpo {
+    margin-left:130px;
+    margin-top:20px;
+  }
+
+  .aboutcuerpo{
+    margin-left:130px;
+    margin-top:-20px;
+  }
+
+  .nav ul {
+    margin-right: 0;
+    width: 130px;
+    height: 100%;
+  }
+  
+  .nav li {
+    border-bottom: none;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: list-item;
+    margin-right: -4px;
+    margin-bottom:100px;
+  }
+
+  .nav > ul > li {
+    text-align: left;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 10;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    margin-top:0px;
+    position: relative;
+    display: list-item;
+    width: inherit;
+    height: 50px;
+  }
+
+  .nav > ul > li > ul > li > a {
+    padding-left: 25;
+  }
+
+  .nav li ul li {
+    position: relative;
+    display: block;
+    width: inherit;
+    height: 50px;
+  }
+
+  li.about{
+    margin: 0 0 0 0;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:0px;
+  }
+}
+
+/*----Ratio 1.5----*/
+@media only screen and (-webkit-device-pixel-ratio:1.5) {
+  .cuerpo {
+    margin-left:130px;
+    margin-top:20px;
+  }
+
+  .aboutcuerpo{
+    margin-left:130px;
+    margin-top:-20px;
+  }
+
+  .nav ul {
+    margin-right: 0;
+    width: 130px;
+    height: 100%;
+  }
+  
+  .nav li {
+    border-bottom: none;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: list-item;
+    margin-right: -4px;
+    margin-bottom:100px;
+  }
+
+  .nav > ul > li {
+    text-align: left;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 10;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    margin-top:0px;
+    position: relative;
+    display: list-item;
+    width: inherit;
+    height: 50px;
+  }
+
+  .nav > ul > li > ul > li > a {
+    padding-left: 25;
+  }
+
+  .nav li ul li {
+    position: relative;
+    display: block;
+    width: inherit;
+    height: 50px;
+  }
+
+  li.about{
+    margin: 0 0 0 0;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:0px;
+  }
+}
+
+/*----Ratio 2----*/
+@media only screen and (-webkit-min-device-pixel-ratio : 2) {
+  .cuerpo {
+    margin-left:130px;
+    margin-top:20px;
+  }
+
+  .aboutcuerpo{
+    margin-left:130px;
+    margin-top:-20px;
+  }
+
+  .nav ul {
+    margin-right: 0;
+    width: 130px;
+    height: 100%;
+  }
+  
+  .nav li {
+    border-bottom: none;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: list-item;
+    margin-right: -4px;
+    margin-bottom:100px;
+  }
+
+  .nav > ul > li {
+    text-align: left;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 10;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    margin-top:0px;
+    position: relative;
+    display: list-item;
+    width: inherit;
+    height: 50px;
+  }
+
+  .nav > ul > li > ul > li > a {
+    padding-left: 25;
+  }
+
+  .nav li ul li {
+    position: relative;
+    display: block;
+    width: inherit;
+    height: 50px;
+  }
+
+  li.about{
+    margin: 0 0 0 0;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:0px;
+  }
+}
